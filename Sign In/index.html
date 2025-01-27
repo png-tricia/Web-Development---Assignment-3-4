@@ -1,0 +1,122 @@
+<!-- 
+    Name: Patricia Gariando
+    Student ID: 991 446 494 
+    Date: Nov. 22 2023 
+    Summary: Libro - Sign In
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bookstore.css" type="text/css" media="screen">
+    <title>Sign In | Libro</title>
+
+    <!-- validate that user info is correct -->
+    <script type="text/javascript">
+        function loginCheck() {
+            /*
+            if (document.loginForm.email.value == "") {
+                alert("Please enter email!");
+                document.loginForm.Name.focus();
+                return false;
+            }
+            if (document.loginForm.pwd.value == "") {
+                alert("Please enter password!");
+                document.loginForm.pwd.focus();
+                return false;
+            } */
+            if (document.loginForm.email.value == "" || document.loginForm.pwd.value == "") {
+                alert("Please fill in the blanks!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="col1"> <!-- welcome side -->
+        <div> <!-- everything is inside of a div -->
+            <h1 style="font-size: 50px; padding-left: 50px;">Libro.</h1>
+            <nav class="center links" style="padding-top: 5px;">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div style="padding-top: 5px;"></div>
+            <h1 style="text-align: center;">login to your account.</h1>
+            <div class="middle userInfo">
+                <form name="loginForm" style="width: 100%;" class="middle" onsubmit="return(loginCheck());"
+                    action="../Search/index.html">
+                    <table style="width: 50%;" class="middle">
+                        <tr>
+                            <td><label for="email">Email Address</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" id="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pwd">Password</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" id="pwd" name="pwd"></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td><a href="" style="text-decoration: none;">forgot your password?</a></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td><input type="submit" value="Login"></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td>can't sign in?<a href="../Create Account/index.html" style="text-decoration: none;">
+                                    create account</a></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td><a href="../index.html" style="text-decoration: none;"><img
+                                        src="../Sign In/images/icon-back.png" width="10px" width="10px"> go back</a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="footer" style="background-color: #333333">
+                <p style="font-size: 15px;">Copyright © 2023. Libro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col2"> <!-- gallery -->
+        <div class="clear">
+            <div class="gallery">
+                <img src="../Sign In/images/book2.jpg">
+                <img src="../Sign In/images/book3.jpg">
+                <img src="../Sign In/images/book4.jpg">
+            </div>
+            <div class="gallery">
+                <img src="../Sign In/images/book1.jpg">
+                <img src="../Sign In/images/book5.jpg">
+                <img src="../Sign In/images/book6.jpg">
+            </div>
+            <div class="gallery">
+                <img src="../Sign In/images/book12.jpg">
+                <img src="../Sign In/images/book13.jpg">
+                <img src="../Sign In/images/book10.jpg">
+            </div>
+            <div class="gallery">
+                <img src="../Sign In/images/book9.jpg">
+                <img src="../Sign In/images/book7.jpg">
+                <img src="../Sign In/images/book11.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

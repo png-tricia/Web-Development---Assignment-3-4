@@ -1,0 +1,184 @@
+<!-- 
+    Name: Patricia Gariando
+    Student ID: 991 446 494 
+    Date: Nov. 22 2023 
+    Summary: Libro - organized by Book Title 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bookstore.css" type="text/css" media="screen">
+    <title>Search | Libro</title>
+
+    <script>
+        function checkOption() {
+            /* validate which buttons were pressed */
+
+            /* organize by author */
+            if (document.getElementById("option0").checked == true) {
+                document.getElementById("checkBox").action = "../Search/index.html";
+            }
+            else if (document.getElementById("option1").checked == true) {
+                document.getElementById("checkBox").action = "../SearchAuthor/index.html";
+            }
+            /* organize by title */
+            else if (document.getElementById("option2").checked == true) {
+                document.getElementById("checkBox").action = "../SearchTitle/index.html";
+            }
+            /* organize by genre */
+            else if (document.getElementById("option3").checked == true) {
+                document.getElementById("checkBox").action = "../SearchDate/index.html";
+            }
+        }
+
+        function checkAuthor() {
+            if (document.optionForm.name.value == "") {
+            }
+            else if (document.optionForm.name.value == "Dr. Seuss" || document.optionForm.name.value == "Robert Munsch" || document.optionForm.name.value == "Paulette Bourgeois" || document.optionForm.name.value == "Brenda Clark") {
+                alert("Warning: Author is included in Libro's catalogue!")
+            }
+            else if (document.optionForm.name.value == "Green Eggs and Ham" || document.optionForm.name.value == "The Lorax" || document.optionForm.name.value == "How The Grinch Lost Christmas" || document.optionForm.name.value == "What Pet Should I Get" || document.optionForm.name.value == "Hurry Up, Franklin" || document.optionForm.name.value == "Franklin's Blanket" || document.optionForm.name.value == "Franklin Fibs" || document.optionForm.name.value == "Franklin Goes To School" || document.optionForm.name.value == "Smelly Socks" || document.optionForm.name.value == "It's My Room" || document.optionForm.name.value == "Too Much Stuff" || document.optionForm.name.value == "A bunch of Munsch") {
+                alert("Warning: Book Title is included in Libro's catalogue!")
+            }
+            else if (document.optionForm.name.value == "2012" || document.optionForm.name.value == "2011" || document.optionForm.name.value == "2013" || document.optionForm.name.value == "2004" || document.optionForm.name.value == "2007" || document.optionForm.name.value == "2020" || document.optionForm.name.value == "1960" || document.optionForm.name.value == "1971" || document.optionForm.name.value == "2023" || document.optionForm.name.value == "2019") {
+                alert("Warning: Publishing Date is found in Libro's catalogue!")
+            }
+            else {
+                alert("Warning: Cannot be found!")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="col1"> <!-- welcome side -->
+        <div> <!-- everything is inside of a div -->
+            <h1 style="font-size: 50px; padding-left: 50px;">Libro.</h1>
+            <nav class="center links" style="padding-top: 5px;">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div style="padding-top: 5px;"></div>
+            <h1 style="text-align: center;">search online bookstore.</h1>
+            <div class="middle">
+                <form name="optionForm" style="width: 100%;" id="checkBox" onsubmit="checkOption(), checkAuthor()"
+                    target="_self" action="">
+                    <table style="width: 50%;" class="middle">
+                        <tr>
+                            <td style="text-align: center; font-size: 20px;">organize catalogue by: </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 20px;">
+                                <input type="checkbox" id="option0" name="option0" value="Default">
+                                <label for="option0"> Default</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 20px;">
+                                <input type="checkbox" id="option1" name="option1" value="Author">
+                                <label for="option1"> Author</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 20px;">
+                                <input type="checkbox" id="option2" name="option2" value="Title">
+                                <label for="option2"> Book Title</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 20px;">
+                                <input type="checkbox" id="option3" name="option3" value="Genre">
+                                <label for="option3"> Publishing Date</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="name" name="name" placeholder="Search..."></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="footer" style="background-color: #333333">
+                <p style="font-size: 15px;">Copyright © 2023. Libro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col2"> <!-- gallery -->
+        <div class="row">
+            <div class="bookSelection">
+                <a id="munsch4"
+                    href="https://www.indigo.ca/en-ca/a-bunch-of-munsch-combined-volume-a-robert-munsch-collection/9781443182645.html?searchType=products&searchTerm=a%20bunch%20of%20munsch"
+                    target="_blank"><img id="munsch4" src="../SearchTitle/images/munsch_book4.jpg"></a>
+            </div>
+            <div class="bookSelection">
+                <a id="franklin2" href="https://www.indigo.ca/en-ca/franklins-blanket/9781554537334.html"
+                    target="_blank"><img id="franklin2" src="../SearchTitle/images/franklin_book2.jpg"></a>
+            </div>
+            <div class="bookSelection">
+                <a id="franklin3" href="https://www.indigo.ca/en-ca/franklin-fibs/9781554537747.html"
+                    target="_blank"><img id="franklin3" src="../SearchTitle/images/franklin_book3.jpg"></a>
+            </div>
+            <div class="bookSelection">
+                <a id="franklin2" href="https://www.indigo.ca/en-ca/franklin-goes-to-school/9781771380102.html"
+                    target="_blank"><img id="franklin4" src="../SearchTitle/images/franklin_book4.jpg"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="bookSelection">
+                <a id="seuss1" href="https://www.indigo.ca/en-ca/green-eggs-and-ham/9780394800165.html"
+                    target="_blank"><img id="seuss1" src="../SearchTitle/images/seuss_book1.jpg"></a>
+            </div>
+            <div class="bookSelection">
+                <a id="seuss3"
+                    href="https://www.indigo.ca/en-ca/dr.-seusss-how-the-grinch-lost-christmas/9780593563175.html"
+                    target="_blank"><img id="seuss3" src="../SearchTitle/images/seuss_book3.jpg"></a>
+            </div>
+            <div class="bookSelection">
+                <a id="franklin1" href="https://www.indigo.ca/en-ca/hurry-up-franklin/9781554538195.html"
+                    target="_blank"><img id="franklin1" src="../SearchTitle/images/franklin_book1.jpg"></a>
+            </div>
+            <div class="bookSelection">
+                <a id="munsch2" href="https://www.indigo.ca/en-ca/its-my-room/9781443113656.html" target="_blank"><img
+                        id="munsch2" src="../SearchTitle/images/munsch_book2.jpg"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="bookSelection">
+                <a id="munsch1" href="https://www.indigo.ca/en-ca/smelly-socks/9780439967075.html" target="_blank"><img
+                        id="munsch1" src="../SearchTitle/images/munsch_book1.jpg"></a>
+            </div>
+            <div class="bookSelection">
+                <a id="seuss2" href="https://www.indigo.ca/en-ca/the-lorax/9780394823379.html" target="_blank"><img
+                        id="seuss2" src="../SearchTitle/images/seuss_book2.jpg"></a>
+            </div>
+            <div class="bookSelection">
+                <a id="munsch3" href="https://www.indigo.ca/en-ca/too-much-stuff/9781443102452.html"
+                    target="_blank"><img id="munsch3" src="../SearchTitle/images/munsch_book3.jpg"></a>
+            </div>
+            <div class="bookSelection">
+                <a id="seuss4" href="https://www.indigo.ca/en-ca/what-pet-should-i-get/9780525707356.html"
+                    target="_blank"><img id="seuss4" src="../SearchTitle/images/seuss_book4.jpg"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
