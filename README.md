@@ -18,4 +18,5 @@ In this assignment, we were required to develop an e-commerce site, which was an
 ![Screenshot 2025-01-27 130929](https://github.com/user-attachments/assets/b04fb820-f2b9-41bc-b0de-29ccdef4a041)
 
 ## Thoughts/Comments: 
-Of course the final assignment had to be the most difficult one. I recall the class making a commotion because we weren't supposed to be learning JavaScript during Sem 1, none of the other sections were. We did have course materials to help with the customer validation but the whole search engine and results page, we had to learn on our own. Another big shoutout to w3schools, you have saved me again and again. 
+Of course the final assignment had to be the most difficult one. I recall the class making a commotion because we weren't supposed to be learning JavaScript during Sem 1, none of the other sections were. We did have course materials to help with the customer validation but the whole search engine and results page, we had to learn on our own. Another big shoutout to w3schools, you have saved me again and again. <br>
+Reminder: the following folders - Create Account, Search, SearchAuthor, SearchDate, SearchTitle are missing their respective images folder. 
