@@ -1,7 +1,6 @@
 ## SYST10049 Web Development - Assignment 3 and 4 
 Program: **Computer Programming @ Sheridan College** <br>
 Note: The following assignment was completed during Semester 1 (2023) <br>
-Languages: HTML, CSS, JavaScript
 
 ## The Task:
 In this assignment, we were required to develop an e-commerce site, which was an online bookstore. Through the developed site, the user should be able to login, search for books and view book details.
